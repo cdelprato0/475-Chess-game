@@ -1,0 +1,25 @@
+﻿<Window x:Class="Cecs475.BoardGames.Chess.WpfView.PawnPromote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cecs475.BoardGames.Chess.WpfView"
+        mc:Ignorable="d"
+        Title="Pawn Promotion" Height="200" Width="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Promote pawn to:"/>
+        <Button Grid.Column="0" Grid.Row="1" x:Name="Rook" Click="Button_Click">Rook</Button>
+        <Button Grid.Column="1" Grid.Row="1" x:Name="Knight" Click="Button_Click">Knight</Button>
+        <Button Grid.Column="0" Grid.Row="2" x:Name="Bishop" Click="Button_Click">Bishop</Button>
+        <Button Grid.Column="1" Grid.Row="2" x:Name="Queen" Click="Button_Click">Queen</Button>
+    </Grid>
+</Window>
